@@ -26,7 +26,6 @@ import com.watabou.noosa.audio.Music;
 import com.watabou.noosa.audio.Sample;
 import com.watabou.pixeldungeon.Assets;
 import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.PixelDungeon;
 import com.watabou.pixeldungeon.Statistics;
 import com.watabou.pixeldungeon.actors.Actor;
 import com.watabou.pixeldungeon.items.Generator;
@@ -206,8 +205,6 @@ public class InterlevelScene extends PixelScene {
 	}
 	
 	private void descend() throws Exception {
-
-		PixelDungeon.switchNoFade( ChangeAvatarScene.class );
 		
 		Actor.fixTime();
 		if (Dungeon.hero == null) {
